@@ -26,8 +26,5 @@ jobs:
       - name: Initialize Terraform
         run: terraform init
 
-      - name: destroy previoys instances
-        run: terraform destroy -auto-approve
-
       - name: Apply Terraform plan
         run: terraform apply -auto-approve
