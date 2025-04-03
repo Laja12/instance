@@ -1,4 +1,4 @@
-name: Terraform AWS EC2 Deployment
+name: policies_attachement
 
 on:
   workflow_dispatch:
