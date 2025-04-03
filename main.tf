@@ -2,8 +2,8 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-resource "aws_iam_user" "awscliuser" {
-  name = "awscliuser"
+resource "aws_iam_user" "usermahesh" {
+  name = "usermahesh"
 }
 
 resource "aws_iam_user_policy_attachment" "admin_policy_attachment" {
@@ -16,7 +16,7 @@ resource "aws_iam_access_key" "awscliuser_access_key" {
 }
 
 resource "aws_iam_role" "s3_role" {
-  name = "ec2-s3-access"
+  name = "s3_role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
